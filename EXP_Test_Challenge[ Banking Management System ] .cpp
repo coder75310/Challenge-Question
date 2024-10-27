@@ -1,3 +1,42 @@
+/* You are tasked with creating a banking system in C++ using Object-Oriented Programming (OOP)
+concepts. The system should track the total number of bank accounts created across all customers
+and include logic to identify high-value customers based on their account balance.
+Requirements:
+1. Create a class BankAccount with the following:
+o A _________data member to store the total number of accounts.
+o A _________data member MIN_HIGH_VALUE that stores the minimum balance
+required to be considered a high-value account (e.g., $1000).
+o A ________data member to store the account number. (auto generated)
+o A ________ data member to store the account balance.
+o A constructor to initialize the account with an initial balance and assign a unique
+account number by incrementing the static member.
+o A ________member function getTotalAccounts() to return the total number of
+accounts created.
+o A ________member function deposit() to deposit money into the account.
+o A _______member function withdraw() to withdraw money from the account (but
+only if sufficient balance is available).
+o A _______member function display() to display account details (account number and
+balance).
+o Logic-building function: A _______member function isHighValueAccount() that
+returns true if the account balance is greater than or equal to MIN_HIGH_VALUE,
+otherwise returns false.
+2. Write a second class, Bank, that:
+o Contains a _______ array of BankAccount objects.
+o Has a ________function addAccount() to create new BankAccount objects with a
+provided initial balance.
+o Implements a _______ function displayHighValueAccounts() that iterates through all
+accounts and displays details of high-value accounts (those where
+isHighValueAccount() returns true).
+3. Implement logic in the main function to:
+o Create at least 5 bank accounts with varying balances using the Bank class.
+o Deposit and withdraw from some accounts.
+o Display the details of all accounts.
+o Use the displayHighValueAccounts() function to show which accounts qualify as highvalue.
+o Display the total number of accounts created using the static function.
+Note: Here ______: chooses the best-fit specifier and storage class: private/public/static/nonstatic/const
+ */
+
+
 #include <iostream>
 #include<vector>
 using namespace std;
